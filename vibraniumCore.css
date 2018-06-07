@@ -63,6 +63,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    animation: 3s infinite linear reactor-anim;
 }
 
 .coil {
@@ -106,4 +107,13 @@ body {
 
 .coil-8 {
     transform: rotate(315deg);
+}
+
+@keyframes reactor-anim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
